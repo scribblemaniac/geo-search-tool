@@ -29,7 +29,7 @@ var validationErrors = false;
 //finalResults stores the search results from the API search
 var finalResults = [];
 
-//finalResults2 stores the final results 
+//finalResults2 stores the final results
 var finalResults2 = [];
 
 //inputObject contains all the inputs from the User
@@ -50,9 +50,7 @@ var queryFromClickSearchNotURL = false;
  */
 var INITIAL_ZOOM_LEVEL = 11;
 var MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-//var API_ACCESS_KEY = 'AIzaSyAEcfhZe0akd47CTYaEOWQ1bLCCbLUfVEY';
-var API_ACCESS_KEY = 'AIzaSyBuQiHS4B-axfTUpBGNeJlF2J78k962zkc';
- 
+var API_ACCESS_KEY = prompt("API Key:", "AIzaSyBuQiHS4B-axfTUpBGNeJlF2J78k962zkc");
 
 var CAR_REGEX = /\d{4} (?:dodge|chevy|ford|toyota|bmw|mercedes|honda|chrysler|pontiac|hyundai|audi|jeep|scion|cadillac|volks|acura|lexus|suburu|nissan|mazda|suzuki|buick|gmc|chevrolet|lincoln|infiniti|mini|hummer|porsche|volvo|land|kia|saturn|mitsubishi)/i;
 
@@ -366,7 +364,7 @@ function completeInputObject() {
     validationErrors = true;
   }
 
-  
+
 
   //if errors exist, display them on interface and terminate execution there
   if (validationErrors) {
